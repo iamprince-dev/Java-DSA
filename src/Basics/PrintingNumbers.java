@@ -1,6 +1,6 @@
 package Basics;
 
-public class Printing_Numbers {
+public class PrintingNumbers {
 	public static void main(String[] args) {
 		
 		System.out.println(69+1);
