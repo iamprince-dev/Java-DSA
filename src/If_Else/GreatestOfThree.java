@@ -19,7 +19,7 @@ public class GreatestOfThree {
 		System.out.println("Enter 3rd number");
 		int c= sc.nextInt();
 
-		
+//		
 		if( a>=b && a>=c) {
 			System.out.println( a);
 		}	
@@ -42,5 +42,7 @@ public class GreatestOfThree {
 //			else  // c > b
 //				System.out.println(c);
 //		}
+		
+		System.out.println(  (a>b) ? ((a>c)? a:c ): (( b>c)? b:c) );
 	}
 }
