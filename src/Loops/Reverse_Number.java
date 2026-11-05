@@ -17,6 +17,7 @@ public class Reverse_Number {
 		 n = n/10;
 		 i++;
 	 }
+	
 	 System.out.println(rev);
 	 
 }

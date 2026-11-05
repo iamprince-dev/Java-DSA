@@ -23,6 +23,7 @@ public class Prime_100 {
 			 }
 			 
 			 if(a==0)System.out.println(i);
+			 
 
 	}
 }

@@ -7,16 +7,22 @@ public class Composit_1_100 {
 	Scanner sc= new Scanner(System.in);
 	
 	System.out.println("Enter a number");
-	int n = sc.nextInt();
-    
-	for(int i =2;i<=n; i++) {
-		
-		if(n%i==0);{
-		
-			System.out.println(i);
-		//	System.out.println(n/i);
-		}
-				
-	}
+	    
+	 
+	 for(int i=2; i<=100; i++)
+	 {
+		 int a=0;
+		 for(int j=2; j<i; j++) {
+			 
+			 if(i%j==0) {
+				a=1; 
+			 }
+		 }
+		 
+		 if(a==1)System.out.println(i);
+		 
+
+}
+
   }
 }
