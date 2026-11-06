@@ -9,15 +9,16 @@ public class Fibbonaci {
 	int n=sc.nextInt();
 	
 	int a=0,b=1,c=0;
-	int i=1;
-	while(c<=n) {
-		c=a+b;
+	
+	for(int i=1;i<=n;i++) {
+		
 		System.out.println(c);
-		a=b;
-		c=a;
+		c=a+b;
+		b=a;
+		a=c;
 		
 		
 	}
-	i++;
+	
 }
 }
