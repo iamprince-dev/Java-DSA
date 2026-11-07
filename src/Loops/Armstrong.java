@@ -10,18 +10,28 @@ public class Armstrong {
 		 System.out.println("Enter a number");
 		 
 		 int n= sc.nextInt();
-		 int original=n;
+		 
 		 int rem=0;
+		 int temp=n;
 		 int arm=0;
-		
+		 int rev=1;
+		int c=0;
 		 while(n!=0) {
-			 
-			 rem=n%10;
-			 arm=arm+rem*rem*rem;
+			 n=n/10;
+		      c++; 	 
+		 }
+      n=temp;
+		 while(n!=0) {
+			 rev=1;
+			 rem= n%10;
+			for(int i=1;i<=c;i++) {
+				rev=rev*rem;
+			}
+			 arm=rev+arm;
 			 n=n/10;
 			 
 		 }
-		 if(arm == original) {
+		 if(arm == temp) {
 			 System.out.println("Armstrong");
 		 }
 		 else {
