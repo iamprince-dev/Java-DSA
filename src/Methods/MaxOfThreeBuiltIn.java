@@ -11,7 +11,8 @@ public class MaxOfThreeBuiltIn {
 		int b=sc.nextInt();
 		System.out.println("Enter 1 number");
 		int c=sc.nextInt();
-		System.out.println(Math.max(Math.max(a, b), c));
+		int d=sc.nextInt();
+		System.out.println(Math.max(Math.max(a, b),Math.max(c,d)));
 	}
 
 }
