@@ -9,32 +9,19 @@ public class Binary {
 		 int n= sc.nextInt();
 		 int rem=0;
 		 int rev=0;
-		 int rem2=0;
-		 int rev2=0;
 		 
-		 
-		 
-		 
+		 int place=1;
 		 
 		 while(n!=0) {
 			 rem = (n%2);
-			 rev= (rev*10)+rem;
+			 rev= rev+(rem*place);
+			 place= place*10;
 			 n = n/2;
 			 
-		 }
-		
-		// System.out.println(rev);
-		 int n2=rev;
-			 
+		 }			 
 		 
-	 while(n2!=0) {
-		 rem2 = (n2%10);
-		 rev2= (rev2*10)+rem2;
-		 n2 = n2/10;
-		 
-	 }
-	
-	 System.out.println(rev2);
+	 	
+	 System.out.println(rev);
 
 }
 
