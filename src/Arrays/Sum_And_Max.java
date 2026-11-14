@@ -24,6 +24,7 @@ public class Sum_And_Max {
 			if(arr[i]>max) {
 				max=arr[i];
 			}
+			arr[i]=0;
 		}
 		System.out.print("max element : "+max);
 
