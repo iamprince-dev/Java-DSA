@@ -12,20 +12,23 @@ public class Second_Max {
 			arr[i]=sc.nextInt();
 		}
 		
-		int sum=0;                 // sum of array
-		for(int i=0;i<arr.length;i++) {
-			sum= sum+arr[i];
-		}
-		System.out.println(sum);
 		int max= arr[0];
-
+        int smax= arr[0];
 		for(int i=0;i<n;i++) {       // max of array
 			if(arr[i]>max) {
+				smax=max;
 				max=arr[i];
 			}
-			arr[i]=0;
+		
 		}
-		System.out.print("max element : "+max);
+		for(int i=0;i<n;i++) {       // max of array
+			if(arr[i]>smax && arr[i]<max) {
+				
+				smax=arr[i];
+			}
+		
+		}
+		System.out.print("Secondmax element : "+smax);
 
 		
 	}
