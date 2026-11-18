@@ -16,18 +16,19 @@ public class Second_Max {
         int smax= arr[0];
 		for(int i=0;i<n;i++) {       // max of array
 			if(arr[i]>max) {
-				smax=max;
+			//	smax=max;
 				max=arr[i];
 			}
 		
 		}
 		for(int i=0;i<n;i++) {       // max of array
-			if(arr[i]>smax && arr[i]<max) {
+			if(arr[i]>smax && arr[i]!=max) {
 				
 				smax=arr[i];
 			}
 		
 		}
+		System.out.println("max element : "+max);
 		System.out.print("Secondmax element : "+smax);
 
 		
