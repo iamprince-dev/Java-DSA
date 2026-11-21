@@ -6,20 +6,16 @@ public class Wave_array {
 		int []arr= {1,2,3,4,5};
 		
 		int n = arr.length;
-		int i=0;
-		int j=1;
 		int temp=0;
 		
-		while(i<n) {
-			if(arr[i]%2==0) {
-			 
+		for(int i=0;i<n-1;i+=2) {
+			
+			
 				temp=arr[i];
-				arr[i]=arr[j];
-				arr[j]=temp;
-				i++;
-				j++;
-
-							}
+				arr[i]=arr[i+1];
+				arr[i+1]=temp;
+				
+							
 		}
 
 				for(int ele:arr) {
