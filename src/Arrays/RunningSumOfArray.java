@@ -3,7 +3,7 @@ package Arrays;
 public class RunningSumOfArray {
 	public static void main(String[] args) {
 		
-		int []arr= {1,2,3,4};
+		int []arr= {1,3,7,15};
 		int n=arr.length;
 		for(int i=0;i<n;i++) {
 			int sum=0;
@@ -11,9 +11,12 @@ public class RunningSumOfArray {
 				sum=sum+arr[j];
 			}
 			
-			System.out.print(arr[i]+sum+" ");
-
+			// arr[i]=arr[i]+sum;
+		
+			 System.out.print(arr[i]+sum+" ");
 		}
+		
+
 	}
 
 }
