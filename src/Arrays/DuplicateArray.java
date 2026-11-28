@@ -13,11 +13,11 @@ public class DuplicateArray {
 		}
 		
 		
-		int sum2=n*(n-1)/2;
-		
-		int expectedsum =sum-sum2;
-
-		System.out.println(expectedsum);
+//		int sum2=n*(n-1)/2;
+//		
+//		int expectedsum =sum-sum2;
+//
+//		System.out.println(expectedsum);
 		
 	}
 }
